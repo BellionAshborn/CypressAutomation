@@ -1,0 +1,3 @@
+{
+    "registrationTextBasedLocator": "[id='loginPanel'] a[href='register.htm']"
+}
