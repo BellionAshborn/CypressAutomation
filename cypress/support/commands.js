@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', () => {
+   cy.visit(Cypress.env('parabankUrl'));
+});
+
+
+Cypress.Commands.add('getIframeBody', (iframeSelector) => {
+  // Find the iframe, its document, and body, and wrap it for Cypress chaining
+  return cy
+    .get(iframeSelector)
+    .its('0.contentDocument.body').should('not.be.empty')
+    .then(cy.wrap); // takes the raw DOM body of the iframe and wraps it in a Cypress chainable object
+});

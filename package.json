@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/BellionAshborn/CypressAutomation#readme",
   "devDependencies": {
-    "cypress": "^14.5.1"
+    "@cypress/webpack-preprocessor": "^6.0.4",
+    "cypress": "^14.5.1",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
+    "webpack": "^5.99.9"
   }
 }

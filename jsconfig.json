@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Root directory (project root)
+    "paths": {
+      "@utils/*": [
+        "cypress/utils/genericUtils/*"
+      ], // <-- Alias: '@utils/filename'
+      "@pages/*": [
+        "cypress/pages/cypressAutomationPages/*"
+      ], // Example for pages
+      "@fixtures/*": [
+        "cypress/fixtures/cypressAutomationData/*"
+      ], 
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "cypress/plugins"
+  ]
+}

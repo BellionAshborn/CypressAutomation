@@ -70,3 +70,30 @@ Environment Setup
    npx cypress open
    (or)
    node_modules/.bin/cypress open
+
+
+
+Make Aliases Work at Runtime (Cypress + Webpack)
+Using Cypress v10+ with @cypress/webpack-preprocessor
+
+Install Webpack and the preprocessor:
+--> npm install --save-dev @cypress/webpack-preprocessor webpack <--
+
+Install tsconfig-paths-webpack-plugin:
+--> npm install --save-dev tsconfig-paths-webpack-plugin <--
+
+-----***-----
+
+module.exports = {
+  e2e: {
+    ...
+  }
+}
+
+This is how you define and export your Cypress project configuration for end-to-end (E2E) tests.
+The main section is e2e, for all E2E test-specific settings.
+
+-----***-----
+
+Project Begins! 
+
