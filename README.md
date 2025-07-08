@@ -97,3 +97,8 @@ The main section is e2e, for all E2E test-specific settings.
 
 Project Begins! 
 
+## Cypress Environment Variables
+
+1. Copy `cypress.env.example.json` to `cypress.env.json`.
+2. Replace the placeholder values with your actual credentials.
+3. `cypress.env.json` is excluded from git for safety.
