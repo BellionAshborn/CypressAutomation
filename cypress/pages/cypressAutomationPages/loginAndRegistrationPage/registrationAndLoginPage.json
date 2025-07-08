@@ -1,0 +1,15 @@
+{
+    "registrationTextBasedLocator": "[id='loginPanel'] a[href='register.htm']",
+    "firstNameInputFieldLocator": "input[id='customer.firstName']",
+    "lastNameInputFieldLocator": "input[name='customer.lastName']",
+    "addressInputFieldLocator": "input[name='customer.address.street']",
+    "cityInputFieldLocator": "input[name='customer.address.city']",
+    "stateInputFieldLocator": "input[name='customer.address.state']",
+    "zipCodeInputFieldLocator": "input[name='customer.address.zipCode']",
+    "phoneNumberInputFieldLocator": "input[name='customer.phoneNumber']",
+    "ssnInputFieldLocator": "input[name='customer.ssn']",
+    "userNameFieldLocator": "input[name='customer.username']",
+    "passwordFieldLocator": "input[name='customer.password']",
+    "confirmFieldLocator": "input[name='repeatedPassword']",
+    "registerButtonLocator": "input[value='Register']"
+}
